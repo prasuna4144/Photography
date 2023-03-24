@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+        <style>
+            *{
+    margin:0;
+    padding:0;
+            
+}
+.container{
+    height:100vh;
+    width:100%;
+    background-image: url("bg.jpeg");
+    background-position: center ;
+    background-size: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    text-shadow: #232d60;
+}
+.container h1{
+    text-align: center;
+    color: rgb(7, 12, 9);
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 70%;
+}
+.music{
+    width: 300px;
+    height:150px;
+    cursor: pointer;
+    
+}
+nav{
+    width:80%;
+    background: #fff;
+    padding-left: 60px;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4);
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 300px;
+    color:#777;
+    cursor:pointer;
+    position: relative;
+    z-index: 2;
+    transition :color 0.5s;
+    padding-left: 12px;
+}
+nav ul li::after{
+    content: '';
+    background:#0996b2;
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: -1;
+    opacity:0;
+}
+nav ul li:hover{
+   color: rgb(255, 255, 255);
+}
+nav ul li:hover::after{
+    top:50%;
+    opacity:1;
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(220, 15, 107);
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: #232d60;
+}
+.content p{
+    font-size: 50px;
+    color: #120c10;
+}
+.content {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+
+
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prasuna's Photography</h1>
+        <div class="navbar">
+            <!-- <h2>Photography</h2> -->
+            <img src="logo.jpg" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <!-- <img src="images/song.jpg" class="music" width="100px"> -->
+        </div>
+        <div class="content">
+            <h1>CREATIVE PHOTOGRAPHY</h1><br><br>
+            <p><b>Photography is a way of feeling, of touching, of loving.It remembers little things long after you have forgotten everything.</b></p>
+        </div>
+      
+       </div>
+      
+</body>
+</html>
